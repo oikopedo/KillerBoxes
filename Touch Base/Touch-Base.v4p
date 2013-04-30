@@ -1,0 +1,415 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
+   <PATCH nodename="C:\Users\Uberact\Documents\GitHub\Touch-Base\Touch Base\Touch-Base.v4p" bgcolor="9437300" filename="C:\Program Files\VVVV\VVVV Install Pack\Touch Base\Touch Base.v4p" systemname="Touch Base">
+   <BOUNDS height="12345" left="0" top="0" type="Window" width="11865">
+   </BOUNDS>
+   <NODE componentmode="Hidden" id="2" nodename="AspectRatio (Transform)" systemname="AspectRatio (Transform)">
+   <BOUNDS height="100" left="1119" top="1995" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Aspect Width">
+   </PIN>
+   <PIN pinname="Aspect Height">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" id="15" nodename="Renderer (EX9)" systemname="RENDERER (EX9)">
+   <BOUNDS height="270" left="684" top="6927" type="Node" width="2910">
+   </BOUNDS>
+   <BOUNDS height="1800" left="684" top="6927" type="Box" width="2400">
+   </BOUNDS>
+   <BOUNDS height="6495" left="11865" top="0" type="Window" width="10800">
+   </BOUNDS>
+   <PIN pinname="Layers" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Left Button" visible="1">
+   </PIN>
+   <PIN pinname="View" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Projection" visible="1">
+   </PIN>
+   <PIN pinname="Windowed Depthbuffer Format" slicecount="1" values="D24X8">
+   </PIN>
+   <PIN pinname="Fullscreen Dimensions" slicecount="1" values="AsDesktop">
+   </PIN>
+   <PIN pinname="Backbuffer Width" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Backbuffer Height" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Fullscreen" visible="1">
+   </PIN>
+   <PIN pinname="Fullscreen Depthbuffer Format" slicecount="1" values="D24X8">
+   </PIN>
+   <PIN pinname="Fullscreen Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   <PIN pinname="Windowed Antialiasing Quality Level" slicecount="1" values="NONE">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="14" nodename="Vector (2d Join)" systemname="Vector (2d Join)">
+   <BOUNDS height="100" left="699" top="7797" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="14" dstpinname="X" hiddenwhenlocked="1" srcnodeid="15" srcpinname="X">
+   </LINK>
+   <LINK dstnodeid="14" dstpinname="Y" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="15" srcpinname="Y">
+   <LINKPOINT x="1074" y="7497">
+   </LINKPOINT>
+   <LINKPOINT x="1284" y="7497">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="Hidden" id="12" nodename="Inverse (Transform)" systemname="Inverse (Transform)">
+   <BOUNDS height="100" left="3204" top="6387" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Transform In" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="Source" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="15" dstpinname="Projection" hiddenwhenlocked="0" srcnodeid="12" srcpinname="Transform Out">
+   </LINK>
+   <NODE componentmode="InABox" id="18" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="100" left="2601" top="534" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="840" left="2601" top="534" type="Box" width="1020">
+   </BOUNDS>
+   <BOUNDS height="160" left="5490" top="4035" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Simulator">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="19" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="1323" top="570" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="252" left="1323" top="570" type="Box" width="984">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="16">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Aspect Width|">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="2" dstpinname="Aspect Width" srcnodeid="19" srcpinname="Y Output Value">
+   </LINK>
+   <NODE componentmode="InABox" id="20" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="1512" top="1050" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="252" left="1512" top="1050" type="Box" width="996">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="9">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Aspect Height|">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="2" dstpinname="Aspect Height" srcnodeid="20" srcpinname="Y Output Value">
+   </LINK>
+   <LINK dstnodeid="12" dstpinname="Source" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="2" srcpinname="Transform Out">
+   <LINKPOINT x="1152" y="4314">
+   </LINKPOINT>
+   <LINKPOINT x="3720" y="4314">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="Hidden" id="24" nodename="Group (EX9)" systemname="Group (EX9)">
+   <BOUNDS height="100" left="684" top="6207" type="Node" width="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="15" dstpinname="Layers" hiddenwhenlocked="1" srcnodeid="24" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" id="25" nodename="Kalle (VVVV)" systemname="Kalle (VVVV)">
+   <BOUNDS height="270" left="4857" top="5571" type="Node" width="510">
+   </BOUNDS>
+   <PIN pinname="Background Kalle" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="26" nodename="IOBox (Color)" systemname="IOBox (Color)">
+   <BOUNDS height="0" left="5361" top="5400" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="405" left="5361" top="5400" type="Box" width="1050">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.45644,0.00000,0.56443,1.00000|">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="25" dstpinname="Background Kalle" srcnodeid="26" srcpinname="Color Output">
+   </LINK>
+   <NODE componentmode="InABox" id="33" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)">
+   <BOUNDS height="100" left="4644" top="558" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="855" left="4644" top="558" type="Box" width="1005">
+   </BOUNDS>
+   <BOUNDS height="160" left="5490" top="4035" type="Window" width="215">
+   </BOUNDS>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Fullscreen">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="15" dstpinname="Fullscreen" hiddenwhenlocked="0" linkstyle="Bezier" srcnodeid="33" srcpinname="Y Output Value">
+   <LINKPOINT x="4644" y="4164">
+   </LINKPOINT>
+   <LINKPOINT x="2304" y="4164">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="InABox" id="56" nodename="Renderer (EX9)" systemname="Renderer (EX9)">
+   <BOUNDS height="100" left="4122" top="4968" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="2280" left="4122" top="4968" type="Box" width="3765">
+   </BOUNDS>
+   <BOUNDS height="5010" left="1665" top="2370" type="Window" width="6240">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Background Color" visible="1" slicecount="1" values="|0.00000,0.00000,0.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Projection" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Clear" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="Backbuffer Width" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="Backbuffer Height" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="Fullscreen" pintype="Input" slicecount="1" visible="-1" values="0">
+   </PIN>
+   <PIN pinname="Enabled" pintype="Input" slicecount="1" visible="-1" values="1">
+   </PIN>
+   <PIN pinname="View" pintype="Input" slicecount="1" visible="-1" values="||">
+   </PIN>
+   <PIN pinname="Aspect Ratio" pintype="Input" slicecount="1" visible="-1" values="||">
+   </PIN>
+   <PIN pinname="X" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Y" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Left Button" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Right Button" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Is Fullscreen" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Middle Button" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Width" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="EX9 Out" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Actual Backbuffer Height" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InAWindow" filename="TB Subpatches\Touch Simulator\Touch-Simulator.v4p" id="10" nodename="TB Subpatches\Touch Simulator\Touch-Simulator.v4p" systemname="Touch-Simulator">
+   <BOUNDS height="270" left="675" top="4251" type="Node" width="1800">
+   </BOUNDS>
+   <PIN pinname="XYid" visible="1">
+   </PIN>
+   <PIN pinname="XYi" visible="1">
+   </PIN>
+   <BOUNDS height="4680" left="675" top="4251" type="Box" width="3885">
+   </BOUNDS>
+   <PIN pinname="AR" visible="1">
+   </PIN>
+   <BOUNDS height="5820" left="11865" top="6510" type="Window" width="4860">
+   </BOUNDS>
+   <PIN pinname="XY Renderer" visible="1">
+   </PIN>
+   <PIN pinname="Touch Points" visible="1">
+   </PIN>
+   <PIN pinname="AspectRatio" visible="1">
+   </PIN>
+   <PIN pinname="layer" visible="1">
+   </PIN>
+   <PIN pinname="Touch iXY" visible="1">
+   </PIN>
+   <PIN pinname="Enable Simulator" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="10" dstpinname="XY Renderer" hiddenwhenlocked="1" linkstyle="PolyLine" srcnodeid="14" srcpinname="XY">
+   <LINKPOINT x="708" y="8292">
+   </LINKPOINT>
+   <LINKPOINT x="480" y="8292">
+   </LINKPOINT>
+   <LINKPOINT x="468" y="3864">
+   </LINKPOINT>
+   <LINKPOINT x="684" y="3864">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="10" dstpinname="AspectRatio" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="2" srcpinname="Transform Out">
+   <LINKPOINT x="1140" y="3258">
+   </LINKPOINT>
+   <LINKPOINT x="1560" y="3258">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="24" dstpinname="Layer 2" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="10" srcpinname="Layer">
+   <LINKPOINT x="2400" y="5358">
+   </LINKPOINT>
+   <LINKPOINT x="972" y="5358">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="Hidden" filename="TB Subpatches\Application.v4p" id="11" nodename="TB Subpatches\Application.v4p" systemname="Application">
+   <BOUNDS height="270" left="684" top="5172" type="Node" width="3120">
+   </BOUNDS>
+   <BOUNDS height="3600" left="684" top="5172" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="12195" left="7755" top="705" type="Window" width="9015">
+   </BOUNDS>
+   <PIN pinname="XYi" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="AspectRatio" visible="1">
+   </PIN>
+   <PIN pinname="iXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="11" dstpinname="AspectRatio" hiddenwhenlocked="1" linkstyle="Bezier" srcnodeid="2" srcpinname="Transform Out">
+   <LINKPOINT x="1176" y="3720">
+   </LINKPOINT>
+   <LINKPOINT x="3732" y="3720">
+   </LINKPOINT>
+   </LINK>
+   <LINK dstnodeid="24" dstpinname="Layer 1" hiddenwhenlocked="1" srcnodeid="11" srcpinname="Layer">
+   </LINK>
+   <NODE componentmode="Hidden" filename="TB Subpatches\Tuio Transform.v4p" id="16" nodename="TB Subpatches\Tuio Transform.v4p" systemname="Tuio Transform">
+   <BOUNDS height="100" left="1104" top="2604" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="3600" left="1104" top="2604" type="Box" width="4800">
+   </BOUNDS>
+   <BOUNDS height="8925" left="13155" top="2865" type="Window" width="9000">
+   </BOUNDS>
+   <PIN pinname="XYi Touch Simulator" visible="1">
+   </PIN>
+   <PIN pinname="AspectRatio" visible="1">
+   </PIN>
+   <PIN pinname="XYi" visible="1">
+   </PIN>
+   <PIN pinname="Tester" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="iXY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="16" dstpinname="AspectRatio" hiddenwhenlocked="1" linkstyle="PolyLine" srcnodeid="2" srcpinname="Transform Out">
+   </LINK>
+   <LINK dstnodeid="16" dstpinname="iXY Touch Simulator" hiddenwhenlocked="1" linkstyle="VHV" srcnodeid="10" srcpinname="iXY Null">
+   <LINKPOINT x="1362" y="3943">
+   </LINKPOINT>
+   <LINKPOINT x="1698" y="3099">
+   </LINKPOINT>
+   </LINK>
+   <NODE componentmode="Hidden" filename="TB Subpatches\Title.v4p" id="55" nodename="TB Subpatches\Title.v4p" systemname="Title">
+   <BOUNDS height="100" left="5430" top="5604" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="8190" left="5430" top="5604" type="Box" width="7530">
+   </BOUNDS>
+   <BOUNDS height="10410" left="13440" top="2310" type="Window" width="9000">
+   </BOUNDS>
+   <PIN pinname="Background Color" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="55" dstpinname="Background Color" srcnodeid="26" srcpinname="Color Output">
+   </LINK>
+   <LINK dstnodeid="56" dstpinname="Layers" srcnodeid="55" srcpinname="Layer">
+   </LINK>
+   <LINK dstnodeid="56" dstpinname="Background Color" srcnodeid="55" srcpinname="Background Color">
+   </LINK>
+   <LINK dstnodeid="56" dstpinname="Projection" srcnodeid="55" srcpinname="Transform Out">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="iXY" dstnodeid="10" dstpinname="Touch iXY" linkstyle="PolyLine" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Touch iXY" dstnodeid="11" dstpinname="iXY" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Enable Simulator" hiddenwhenlocked="0" linkstyle="Bezier">
+   <LINKPOINT x="2616" y="2808">
+   </LINKPOINT>
+   <LINKPOINT x="2004" y="2808">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="3684" top="552" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3684" top="552" width="912" height="864">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Film Mode|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="10" dstpinname="Film Mode" hiddenwhenlocked="0" linkstyle="Bezier">
+   <LINKPOINT x="3684" y="2826">
+   </LINKPOINT>
+   <LINKPOINT x="2448" y="2826">
+   </LINKPOINT>
+   </LINK>
+   </PATCH>
