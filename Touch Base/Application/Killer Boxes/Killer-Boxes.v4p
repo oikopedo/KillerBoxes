@@ -107,7 +107,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2205" top="2430" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="1290" top="5550" width="9000" height="6000">
+   <BOUNDS type="Window" left="315" top="6270" width="9000" height="6915">
    </BOUNDS>
    <PIN pinname="iXY" visible="1">
    </PIN>

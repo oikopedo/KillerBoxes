@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Touch-Base.v4p" bgcolor="9437300" filename="C:\Program Files\VVVV\VVVV Install Pack\Touch Base\Touch Base.v4p" systemname="Touch Base">
-   <BOUNDS height="12180" left="0" top="4980" type="Window" width="11865">
+   <BOUNDS height="12180" left="-345" top="0" type="Window" width="11865">
    </BOUNDS>
    <NODE componentmode="Hidden" id="2" nodename="AspectRatio (Transform)" systemname="AspectRatio (Transform)">
    <BOUNDS height="100" left="1119" top="1995" type="Node" width="100">
@@ -304,7 +304,7 @@
    <LINKPOINT x="972" y="5358">
    </LINKPOINT>
    </LINK>
-   <NODE componentmode="InAWindow" filename="TB Subpatches\Application.v4p" id="11" nodename="TB Subpatches\Application.v4p" systemname="Application">
+   <NODE componentmode="Hidden" filename="TB Subpatches\Application.v4p" id="11" nodename="TB Subpatches\Application.v4p" systemname="Application">
    <BOUNDS height="270" left="684" top="5172" type="Node" width="3120">
    </BOUNDS>
    <BOUNDS height="3600" left="684" top="5172" type="Box" width="4800">

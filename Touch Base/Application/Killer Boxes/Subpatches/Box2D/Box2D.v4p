@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Application\Killer Boxes\Subpatches\Box2D\Box2D.v4p" systemname="Box2D" filename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Application\Killer Boxes\Subpatches\Box2D\Box2D.v4p">
-   <BOUNDS type="Window" left="5145" top="1050" width="9000" height="6000">
+   <BOUNDS type="Window" left="4845" top="5805" width="9000" height="6000">
    </BOUNDS>
    <NODE componentmode="InABox" id="35" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="4770" top="5280" type="Node" width="0">
@@ -145,9 +145,9 @@
    </PIN>
    <PIN pinname="EX9 Out" visible="1">
    </PIN>
-   <PIN pinname="Backbuffer Width" slicecount="1" values="1080">
+   <PIN pinname="Backbuffer Width" slicecount="1" values="720">
    </PIN>
-   <PIN pinname="Backbuffer Height" slicecount="1" values="720">
+   <PIN pinname="Backbuffer Height" slicecount="1" values="576">
    </PIN>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -563,6 +563,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Angular Velocity|">
    </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.01">
+   </PIN>
    </NODE>
    <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Angular Velocity">
    </LINK>
@@ -576,6 +578,8 @@
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Linear Damping|">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0.02">
    </PIN>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="15" dstpinname="Linear Damping">
@@ -637,6 +641,8 @@
    </BOUNDS>
    <PIN pinname="Texture" visible="1">
    </PIN>
+   <PIN pinname="Transform" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="30" srcpinname="EX9 Out" dstnodeid="36" dstpinname="Source">
    </LINK>
@@ -653,5 +659,17 @@
    <LINK srcnodeid="37" srcpinname="Layer" dstnodeid="38" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="17" srcpinname="Transform Out" dstnodeid="30" dstpinname="Projection">
+   </LINK>
+   <NODE systemname="Transform (Transform 2d)" nodename="Transform (Transform 2d)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="16245" top="10875" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="ScaleX" slicecount="1" values="1.99">
+   </PIN>
+   <PIN pinname="ScaleY" slicecount="1" values="1.33">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="39" srcpinname="Transform Out" dstnodeid="37" dstpinname="Transform">
    </LINK>
    </PATCH>
