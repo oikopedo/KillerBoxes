@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Application\Killer Boxes\Killer-Boxes.v4p" filename="C:\Program Files\VVVV\VVVV Install Pack\Touch Base\Applications\U0000 Template\Main.v4p" systemname="Main">
-   <BOUNDS height="9465" left="5655" top="4380" type="Window" width="9000">
+   <BOUNDS height="9465" left="7170" top="4860" type="Window" width="9000">
    </BOUNDS>
    <NODE componentmode="InABox" id="1" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="1320" top="816" type="Node" width="0">
@@ -49,7 +49,7 @@
    </PIN>
    <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Layer 2" visible="1">
+   <PIN pinname="Layer 2" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
    <LINK dstnodeid="2" dstpinname="Input Node" srcnodeid="3" srcpinname="Layer">
@@ -60,6 +60,8 @@
    <BOUNDS height="240" left="4248" top="816" type="Box" width="795">
    </BOUNDS>
    <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Reset">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
@@ -104,12 +106,12 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
-   <NODE systemname="Logic" filename="Subpatches\Logic.v4p" componentmode="InAWindow" id="10" nodename="Subpatches\Logic.v4p">
+   <NODE systemname="Logic" filename="Subpatches\Logic.v4p" componentmode="Hidden" id="10" nodename="Subpatches\Logic.v4p">
    <BOUNDS type="Node" left="2205" top="2430" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="2205" top="2430" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="465" top="3690" width="9000" height="6915">
+   <BOUNDS type="Window" left="4005" top="7515" width="9000" height="6915">
    </BOUNDS>
    <PIN pinname="iXY" visible="1">
    </PIN>
@@ -130,20 +132,26 @@
    <LINKPOINT x="1380" y="3300">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="Graphics" filename="Subpatches\Graphics\Graphics.v4p" componentmode="InAWindow" id="11" nodename="Subpatches\Graphics\Graphics.v4p">
+   <NODE systemname="Graphics" filename="Subpatches\Graphics\Graphics.v4p" componentmode="Hidden" id="11" nodename="Subpatches\Graphics\Graphics.v4p">
    <BOUNDS type="Node" left="4155" top="3315" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4155" top="3315" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="3255" top="2310" width="9000" height="6000">
+   <BOUNDS type="Window" left="0" top="5610" width="9000" height="6000">
    </BOUNDS>
-   <PIN pinname="Bodies" visible="1">
+   <PIN pinname="Bodies" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="Bodies" dstnodeid="11" dstpinname="Bodies">
-   </LINK>
-   <LINK srcnodeid="11" srcpinname="Layer" dstnodeid="3" dstpinname="Layer 2">
+   <NODE systemname="S (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (Value Advanced)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="4260" top="1170" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Send String" slicecount="1" values="reset">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Input">
    </LINK>
    </PATCH>
