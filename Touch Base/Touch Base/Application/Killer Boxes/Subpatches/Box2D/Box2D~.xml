@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Application\Killer Boxes\Subpatches\Box2D\Box2D.v4p" systemname="Box2D" filename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Application\Killer Boxes\Subpatches\Box2D\Box2D.v4p">
-   <BOUNDS type="Window" left="3945" top="4335" width="19380" height="11640">
+   <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Touch Base\Application\Killer Boxes\Subpatches\Box2D\Box2D.v4p" systemname="Box2D" filename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Application\Killer Boxes\Subpatches\Box2D\Box2D.v4p">
+   <BOUNDS type="Window" left="-435" top="6195" width="19380" height="11640">
    </BOUNDS>
    <NODE componentmode="Hidden" id="34" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dWorldNode" systemname="World (Box2d)" filename="%VVVV%\addonpack\lib\nodes\plugins\vuxbins\Box2dNodes.dll">
    <PIN pinname="World" visible="1">
@@ -177,9 +177,11 @@
    </PIN>
    <PIN pinname="Do Create" visible="1">
    </PIN>
-   <PIN pinname="PositionXY" visible="1">
+   <PIN pinname="PositionXY" visible="1" slicecount="2" values="-12.91,-11.11">
    </PIN>
    <PIN pinname="Custom" slicecount="1" values="ground">
+   </PIN>
+   <PIN pinname="Angle" slicecount="4" values="4.75,0,4.75,0">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="26" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dBoxDefNode" hiddenwhenlocked="1" systemname="Box (Box2d)" filename="%VVVV%\addonpack\lib\nodes\plugins\vuxbins\Box2dNodes.dll">
@@ -211,16 +213,6 @@
    </PIN>
    </NODE>
    <LINK dstnodeid="26" dstpinname="SizeXY" srcnodeid="25" srcpinname="XY" hiddenwhenlocked="1">
-   </LINK>
-   <NODE componentmode="Hidden" id="24" nodename="Vector (2d Join)" hiddenwhenlocked="1" systemname="Vector (2d Join)">
-   <BOUNDS height="0" left="4665" top="12195" type="Node" width="0">
-   </BOUNDS>
-   <PIN pinname="XY" visible="1">
-   </PIN>
-   <PIN pinname="Y" slicecount="1" values="-10.96">
-   </PIN>
-   </NODE>
-   <LINK dstnodeid="27" dstpinname="PositionXY" srcnodeid="24" srcpinname="XY" hiddenwhenlocked="1">
    </LINK>
    <NODE componentmode="Hidden" id="23" nodename="OnOpen (VVVV)" systemname="OnOpen (VVVV)">
    <BOUNDS height="0" left="8520" top="2475" type="Node" width="0">
@@ -290,6 +282,8 @@
    <PIN pinname="VerticesXYZ" visible="1">
    </PIN>
    <PIN pinname="BinSize" visible="1">
+   </PIN>
+   <PIN pinname="Color" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    </NODE>
    <NODE componentmode="Hidden" id="19" nodename="Vector (2d Split)" hiddenwhenlocked="1" systemname="Vector (2d Split)">
@@ -745,9 +739,9 @@
    </BOUNDS>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="105" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="27810" top="2700" width="0" height="0">
+   <BOUNDS type="Node" left="29145" top="2730" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="27810" top="2700" width="795" height="240">
+   <BOUNDS type="Box" left="29145" top="2730" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -833,9 +827,9 @@
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="101" srcpinname="Point Id" dstnodeid="105" dstpinname="Y Input Value" linkstyle="VHV">
-   <LINKPOINT x="27840" y="2558">
+   <LINKPOINT x="28285" y="2568">
    </LINKPOINT>
-   <LINKPOINT x="27840" y="2558">
+   <LINKPOINT x="28730" y="2578">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="101" srcpinname="Object Id" dstnodeid="106" dstpinname="Y Input Value" linkstyle="VHV">
@@ -1535,7 +1529,7 @@
    <NODE componentmode="Hidden" id="178" nodename="Divide (Value)" systemname="Divide (Value)">
    <BOUNDS height="0" left="26295" top="2160" type="Node" width="0">
    </BOUNDS>
-   <PIN pinname="Input 2" slicecount="1" values="5">
+   <PIN pinname="Input 2" slicecount="1" values="4.59">
    </PIN>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -1570,12 +1564,6 @@
    <LINKPOINT x="28320" y="1163">
    </LINKPOINT>
    <LINKPOINT x="26475" y="1163">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="178" srcpinname="Output" dstnodeid="177" dstpinname="ForceXY" linkstyle="VHV">
-   <LINKPOINT x="26295" y="3053">
-   </LINKPOINT>
-   <LINKPOINT x="25005" y="3053">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="29" srcpinname="PositionXY" dstnodeid="177" dstpinname="PositionXY" linkstyle="VHV">
@@ -1666,4 +1654,114 @@
    <LINKPOINT x="19875" y="9923">
    </LINKPOINT>
    </LINK>
+   <NODE componentmode="Hidden" id="196" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dCreateBodyNode" hiddenwhenlocked="1" systemname="CreateBody (Box2d)" filename="%VVVV%\addonpack\lib\nodes\plugins\vuxbins\Box2dNodes.dll">
+   <BOUNDS height="270" left="3855" top="15060" type="Node" width="4575">
+   </BOUNDS>
+   <BOUNDS height="0" left="3855" top="15060" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="2955" top="8160" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="World" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Shapes" visible="1">
+   </PIN>
+   <PIN pinname="Do Create" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="PositionXY" visible="1" slicecount="2" values="12.85,15.39">
+   </PIN>
+   <PIN pinname="Custom" slicecount="1" values="ground">
+   </PIN>
+   <PIN pinname="Angle" slicecount="2" values="4.75,0">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="195" nodename=":PLUGINS:\Box2dNodes.dll|VVVV.Nodes.Box2dBoxDefNode" hiddenwhenlocked="1" systemname="Box (Box2d)" filename="%VVVV%\addonpack\lib\nodes\plugins\vuxbins\Box2dNodes.dll">
+   <BOUNDS height="270" left="4200" top="14055" type="Node" width="1455">
+   </BOUNDS>
+   <BOUNDS height="0" left="4200" top="14055" type="Box" width="0">
+   </BOUNDS>
+   <BOUNDS height="0" left="3150" top="6030" type="Window" width="0">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Density" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Restitution" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="196" dstpinname="Shapes" srcnodeid="195" srcpinname="Output" hiddenwhenlocked="1">
+   </LINK>
+   <NODE componentmode="Hidden" id="194" nodename="Vector (2d Join)" hiddenwhenlocked="1" systemname="Vector (2d Join)">
+   <BOUNDS height="0" left="4425" top="13320" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" slicecount="1" values="60">
+   </PIN>
+   <PIN pinname="Y" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK dstnodeid="195" dstpinname="SizeXY" srcnodeid="194" srcpinname="XY" hiddenwhenlocked="1">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Has Reset" dstnodeid="196" dstpinname="Do Create" linkstyle="VHV">
+   <LINKPOINT x="8160" y="9645">
+   </LINKPOINT>
+   <LINKPOINT x="8385" y="9645">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="World" dstnodeid="196" dstpinname="World" linkstyle="VHV">
+   <LINKPOINT x="4200" y="9645">
+   </LINKPOINT>
+   <LINKPOINT x="3885" y="9645">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="178" srcpinname="Output" dstnodeid="177" dstpinname="ForceXY" linkstyle="VHV">
+   <LINKPOINT x="26295" y="3053">
+   </LINKPOINT>
+   <LINKPOINT x="25005" y="3053">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="197" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="11925" top="5070" width="3630" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11925" top="5070" width="3630" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|//This part here is show triangle on the screen//|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="199" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="16245" top="12210" width="7200" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="16245" top="12210" width="7305" height="705">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|//Here is the logic so we can destoy the bullets and &cr;&lf;the boxes when they contact on another body//|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="200" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="21750" top="210" width="8640" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="21750" top="210" width="8640" height="795">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|//With the use of Gravity and apply force the bullets go against &cr;&lf;he gravity of the world and they are following the mouse//|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
