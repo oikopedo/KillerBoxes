@@ -115,7 +115,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1320" top="2430" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2130" top="5850" width="7485" height="7410">
+   <BOUNDS type="Window" left="6480" top="3990" width="7485" height="7410">
    </BOUNDS>
    <PIN pinname="iXY" visible="1">
    </PIN>
@@ -141,7 +141,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1320" top="3315" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="2805" top="8550" width="9000" height="6000">
+   <BOUNDS type="Window" left="810" top="7155" width="9000" height="6000">
    </BOUNDS>
    <PIN pinname="Bodies" visible="1" slicecount="1" values="||">
    </PIN>
