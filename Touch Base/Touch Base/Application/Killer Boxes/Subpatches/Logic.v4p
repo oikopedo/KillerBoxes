@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
    <PATCH nodename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Touch Base\Application\Killer Boxes\Subpatches\Logic.v4p" systemname="Logic" filename="C:\Users\Vasilis\Documents\GitHub\KillerBoxes\Touch Base\Application\Killer Boxes\Subpatches\Logic.v4p">
-   <BOUNDS type="Window" left="3585" top="6735" width="19380" height="7410">
+   <BOUNDS type="Window" left="2130" top="5850" width="7485" height="7410">
    </BOUNDS>
    <NODE systemname="Box2D" filename="Box2D\Box2D.v4p" componentmode="Hidden" id="0" nodename="Box2D\Box2D.v4p">
    <BOUNDS type="Node" left="4230" top="2265" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="4230" top="2265" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="-120" top="-120" width="19380" height="11640">
+   <BOUNDS type="Window" left="360" top="7290" width="19380" height="12045">
    </BOUNDS>
    <PIN pinname="Create Body" visible="1" slicecount="1" values="0">
    </PIN>
