@@ -17,7 +17,7 @@
    </BOUNDS>
    <BOUNDS height="1800" left="684" top="6927" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="6465" left="8565" top="0" type="Window" width="10800">
+   <BOUNDS height="6570" left="8685" top="0" type="Window" width="10800">
    </BOUNDS>
    <PIN pinname="Layers" slicecount="1" visible="1" values="||">
    </PIN>
@@ -309,7 +309,7 @@
    </BOUNDS>
    <BOUNDS height="3600" left="684" top="5172" type="Box" width="4800">
    </BOUNDS>
-   <BOUNDS height="9585" left="3615" top="930" type="Window" width="9015">
+   <BOUNDS height="9585" left="3315" top="3150" type="Window" width="9015">
    </BOUNDS>
    <PIN pinname="XYi" visible="1">
    </PIN>
